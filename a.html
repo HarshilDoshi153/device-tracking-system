@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Confirmation</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #love-page {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #love-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #no-btn:hover {
+            position: relative;
+            left: 10px;
+            cursor: not-allowed;
+        }
+
+        #yes-btn:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-page">
+        <label for="datePicker">Select a Date: </label>
+        <input type="date" id="datePicker">
+        <button id="no-btn" onclick="changeButton()">No</button>
+        <button id="yes-btn" onclick="openLovePage()">Yes</button>
+    </div>
+
+    <div id="love-page">
+        <p id="love-message">I Love You!</p>
+    </div>
+
+    <script>
+        function changeButton() {
+            document.getElementById("no-btn").disabled = true;
+        }
+
+        function openLovePage() {
+            document.getElementById("main-page").style.display = "none";
+            document.getElementById("love-page").style.display = "flex";
+        }
+    </script>
+</body>
+</html>

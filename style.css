@@ -1,0 +1,189 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    path {
+      fill: #e7e4fe;
+    }
+
+    polygon {
+      fill: #e7e4fe;
+    }
+
+    path:hover {
+      fill: #fd9696;
+    }
+
+    polygon:hover {
+      fill: #fd9696;
+    }
+
+    .vertical-divider {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      height: 90%;
+    }
+
+    .logOut {
+      position: absolute;
+      bottom: 0;
+      background-color: #191a36;
+      color: #8a93a2;
+      height: 57px;
+      border: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logOut:hover {
+      background-color: #2a2b49;
+    }
+
+    .btn-clr {
+      background-color: #5f4279;
+      color: #ffffff;
+      /* border: 0.1px solid #a7a7a7; */
+    }
+
+    .btn-clr:hover {
+      background-color: rgb(140, 109, 168);
+      color: white;
+    }
+
+
+
+    .increase {
+      font-size: 35px;
+    }
+
+    .card.mb-4.text-white :hover .increase {
+      font-size: 40px;
+      transition: font-size 0.3s ease;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="text"].form-control:focus,
+    .form-control:focus,
+    input[type="date"]:focus {
+      border-color: rgb(176, 148, 255);
+      -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0.25);
+      box-shadow: 0 0 0 0.2rem rgb(118 72 255 / 25%);
+    }
+
+    @media (max-width: 1382px) {
+
+      .d-flex.flex-column.text-center.mx-3,
+      .d-flex.flex-column.text-center {
+        width: 100%;
+      }
+
+      .d-flex.flex-column.text-center.mx-3 .increase,
+      .d-flex.flex-column.text-center .increase {
+        font-size: 30px;
+        /* Set font size for smaller screens */
+      }
+
+      .d-flex.flex-column.text-center.mx-3 .fs-6.f,
+      .d-flex.flex-column.text-center .fs-6.f {
+        font-size: 14px;
+        margin-top: -12px;
+      }
+
+      /* Hover effect for responsive view */
+      .d-flex.flex-column.text-center.mx-3 :hover .increase {
+        font-size: 40px;
+        transition: font-size 0.3s ease;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .card.mb-4.text-white.bg-warning {
+      cursor: pointer;
+    }
+
+    .card.mb-4.text-white.bg-info {
+      cursor: pointer;
+    }
+
+    .card.mb-4.text-white.bg-danger {
+      cursor: pointer;
+    }
+
+    .activate {
+      background-color: #3c3d68;
+      color: white;
+    }
+
+    /* Define scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 7px;
+      border-radius: 5px;
+      /* Set the width of the scrollbar */
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 5px;
+      /* Set the background color of the scrollbar track */
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #c7c7c7;
+      border-radius: 5px;
+      /* Set the color of the scrollbar handle */
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #cdcdcd;
+      /* Set the color of the scrollbar handle on hover */
+    }
+
+    /* Set scrollbar corner style */
+    ::-webkit-scrollbar-corner {
+      background: #f1f1f1;
+      /* Set the background color of the scrollbar corner */
+    }
+
+    .table td,
+    .table th {
+      padding: 0.25rem;
+      vertical-align: center;
+      border-top: 0.5px solid #dee2e6;
+    }
+
+    table,
+    td,
+    th {
+      font-size: 13.0px;
+    }
+
+    .fixed-header th {
+      position: sticky;
+      top: 0;
+      background-color: #373971;
+      color: #faf8fc;
+      z-index: 1;
+    }
+
+    .card-header {
+      background-color: #faf8fc;
+      color: #1f203f;
+      font-size: 20px;
+    }
+
+    nav ul li:hover {
+      color: white;
+    }
+
+    .round {
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    .round-header {
+      border-radius: 15px 15px 0px 0px;
+    }
